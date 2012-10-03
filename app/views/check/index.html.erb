@@ -1,0 +1,9 @@
+<h1>SEO Audit</h1>
+<div class="well">
+	<%= form_tag("/audit", :method => "get") do %>
+	<%= label_tag(:webaddress, "Web Address:") %>
+	<input type="text" name="webaddress" placeholder="www.google.co.uk" value="" />
+	<div class="clearfix"></div>
+	<button class="btn btn-primary" name="check" value="check">Audit</button>
+	<% end %>
+</div>
